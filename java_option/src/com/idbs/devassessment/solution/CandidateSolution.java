@@ -70,13 +70,13 @@ public class CandidateSolution extends CandidateSolutionBase {
       // for working out the multiplication of valueOfX ^ power
       value = multiplcation(multiplier, value);
 
-      // This changes the values to a positive or negative depending on the what
-      // variable
+      // This changes the values to a positive or negative depending on the variable
+      // action
       if (action.equals("subtract")) {
         value = -value;
       }
 
-      // this add of the result from the separate parts of the polynomial
+      // this adds the result from the separate parts of the polynomial
       answer += value;
     }
 
@@ -85,10 +85,10 @@ public class CandidateSolution extends CandidateSolutionBase {
 
   /**
    * This method works out the x^y. This starts with a for loop so it can add the
-   * answer of the previous powers result. they are equal to each other so
-   * they can be added to act as powers of 2 e.g 2+2=2^2, 4+4=2^3, 8+8=2&4
+   * answer of the previous powers result. The vairable answer and increment are equal to 
+   * each other so they can be added to act as powers of 2 e.g 2+2=2^2, 4+4=2^3, 8+8=2&4
    * 
-   * @param power    int value read from json
+   * @param power int value read from json
    * @param valueOfX int value read from json
    * @return int value of the solution, valueOfX ^ power
    */

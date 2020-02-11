@@ -56,10 +56,12 @@ public class CandidateSolution extends CandidateSolutionBase {
     int answer = 0;
 
     for (int i = 0; i < terms.size(); i++) {
+      // These variable get the information like power, multiplier and action from the json array
       items = terms.getJsonObject(i);
       power = items.getInt("power");
       multiplier = items.getInt("multiplier");
       action = items.getString("action");
+      
       int value = valueOfX;
 
       // for working out x to the power of
